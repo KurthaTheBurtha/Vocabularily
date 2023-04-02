@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block app_content %}
+    <div class="container-fluid">
+        <div class="row text-center">
+            <h1>Welcome to Vocabularily!</h1>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 text-center bg-success">
+                <a href="{{ url_for('match') }}">Matching Game</a>
+            </div>
+            <div class="col-md-4 text-center bg-warning">
+                <a href="{{ url_for('choice') }}">Choice</a>
+            </div>
+            <div class="col-md-4 text-center bg-info">
+                <a href="{{ url_for('definition') }}">Definition</a>
+            </div>
+        </div>
+        <div class="row">
+                <div class="col-md-4 text-center bg-success">
+                    <div class="card" style="width: 18rem;">
+                    <img src="https://via.placeholder.com/350" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Matching Game involves matching keywords to definitions, giving points based on how fast you can connect them together!</p>
+                    </div>
+                    </div>
+                </div>
+            <div class="col-md-4 text-center bg-warning">
+                    <div class="card" style="width: 18rem;">
+                    <img src="https://via.placeholder.com/350" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Choice Game involves a multiple-choice style where you get a word and need to select a definition</p>
+                    </div>
+                    </div>
+            </div>
+            <div class="col-md-4 text-center bg-info">
+                    <div class="card" style="width: 18rem;">
+                    <img src="https://via.placeholder.com/350" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Definition Game involves manually writing a definition similar enough to the actual definition.</p>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

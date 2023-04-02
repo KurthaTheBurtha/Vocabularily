@@ -1,0 +1,25 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block scripts %}
+<!--    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />-->
+<!--    <script defer src="https://pyscript.net/latest/pyscript.js"></script>-->
+<!--    <script src="/script/choice.js"></script>-->
+{% endblock %}
+
+{% block title %}
+    SAT GAME
+{% endblock %}
+
+{% block navbar %}
+    <div class="container-fluid">
+
+        <p class="navbar-text navbar-right">Signed in as <a href="#" class="navbar-link">Kurt Schimmel</a></p>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        {% block app_content %}{% endblock %}
+    </div>
+{% endblock %}
+
